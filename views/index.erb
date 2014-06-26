@@ -1,0 +1,35 @@
+<% content_for :head do %>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+<% end %>
+
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-xs-12 col-sm-4">
+		<form id="form" class="form-horizontal" role="form" action="#">
+			<div class="form-group">
+				<label for="language-input">I speak&hellip;</label>
+				<select name="native" id="language-input" class="form-control">
+					<option value="en">English</option>
+					<option value="jp">日本語</option>
+					<option value="cn">普通话</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="language-input">I am learning&hellip;</label>
+				<select name="foreign" id="language-input" class="form-control">
+					<option value="en">English</option>
+					<option value="jp">日本語</option>
+					<option value="cn">普通话</option>
+				</select>
+			</div>
+			<div class="form-group" style="text-align: center;">
+				<input class="btn btn-default" type="submit" value="Chat" />
+			</div>
+			<input type="hidden" name="id" value="" />
+		</form>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+
+<script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+<script src="/js/index.js"></script>
